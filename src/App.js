@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import axios from "axios";
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component<any, any>{
+  constructor(props: any){
+    super(props);
+    this.state = {
+      quote: "",
+    }; 
+  }
+
+  submitQuote = (event: any) => {
+    event.preventDefault();
+    const quote = this.state.quote;
+    axios.get("http://127.0.0.1:5000/my_app",{
+      params: {
+        message:quote 
+      }
+    })
+    this.form.reset()
+  };
+
+  handleChange = (event: any) => {
+    this.setState({
+      quote: event.target.value,
+    });
+  };
+
+  render(){
+    return(
+      <div className="App">
+        <form name="message_form" action="#" ref={form => this.form = form}>
+          <label>
+        {" "}
+            <input type="text" name="message" placeholder="ENTER YOUR MESSAGE" maxLength={200} onChange={this.handleChange} />
+          </label>
+          <button class="button" onClick={this.submitQuote}>Submit</button>
+        </form>
+      </div>
+    );
+  }
 }
 
 export default App;
