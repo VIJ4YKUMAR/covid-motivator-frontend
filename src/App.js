@@ -35,7 +35,7 @@ class App extends React.Component<any, any>{
         {" "}
             <input type="text" name="message" placeholder="ENTER YOUR MESSAGE" maxLength={200} onChange={this.handleChange} />
           </label>
-          <button class="button" onClick={this.submitQuote}>Submit</button>
+          <button class="button" onClick={this.submitQuote}>SEND</button>
         </form>
       </div>
     );
