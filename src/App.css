@@ -13,7 +13,7 @@ html{
 
 .App {
   position: absolute;
-  left: 700px;
+  left: 350px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ input[type=text], select {
 .button {
   position: absolute;
   left: 200px;
-  top: 700px;
+  top: 450px;
   display: inline-block;
   padding: 20px 30px;
   font-size: 24px;
