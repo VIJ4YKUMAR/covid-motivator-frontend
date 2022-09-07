@@ -9,6 +9,10 @@ class App extends React.Component<any, any>{
       quote: "",
     }; 
   }
+  componentDidMount() {
+    axios.get("http://127.0.0.1:5000/get_messages")
+    
+  }
 
   submitQuote = (event: any) => {
     event.preventDefault();
@@ -29,13 +33,13 @@ class App extends React.Component<any, any>{
 
   render(){
     return(
-      <div className="App">
+      <div key="main-app" className="App">
         <form name="message_form" action="#" ref={form => this.form = form}>
           <label>
         {" "}
             <input type="text" name="message" placeholder="ENTER YOUR MESSAGE" maxLength={200} onChange={this.handleChange} />
           </label>
-          <button class="button" onClick={this.submitQuote}>SEND</button>
+          <button className="button" onClick={this.submitQuote}>SEND</button>
         </form>
       </div>
     );
