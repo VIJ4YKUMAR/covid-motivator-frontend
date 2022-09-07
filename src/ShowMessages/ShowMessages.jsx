@@ -1,5 +1,10 @@
 import React from "react";
 import axios from "axios";
+import { FlippingCard } from 'react-ui-cards';
+import { FlippingCardBack } from 'react-ui-cards';
+import { FlippingCardFront } from 'react-ui-cards';
+
+import "./ShowMessages.css";
 
 class ShowMessages extends React.Component<any, any>{
   constructor(props: any) {
@@ -10,6 +15,7 @@ class ShowMessages extends React.Component<any, any>{
   }
 
   async componentDidMount() {
+    this.getMessages();
     setInterval(this.getMessages, 5000)
   }
 
@@ -24,33 +30,47 @@ class ShowMessages extends React.Component<any, any>{
     const messages = this.state.messages
     if (messages.length == 0) return <div>No Messages</div>
 
-    return <div> <ul>{
-      messages.map(info) => <FlippingCard>
-      <FlippingCardBack>
-          <div
-              style={{
-                  width: '100%',
-                  height: '100%',
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundImage: 'url(https://i.imgur.com/wjbYGNv.jpg)'
-              }}>
-          </div>
-      </FlippingCardBack>
-      <FlippingCardFront>
-          <div
-              style={{
-                  width: '100%',
-                  height: '100%',
-                  backgroundSize: 'contain',
-                  backgroundPosition: 'center',
-                  backgroundImage: 'url(https://i.imgur.com/3sKjY8V.jpg)'
-              }}>
-          </div>
-      </FlippingCardFront>
-  </FlippingCard>
-  </ul>
-  </div>
+    return <div> <ul  style={{
+    display : "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+  }}>{
+      messages.map((info) => {
+        return <FlippingCard>
+        <FlippingCardBack>
+            <div 
+                style={{
+                    width: '100%',
+                    height: '75%',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#8BC6EC',                   
+                    backgroundImage: 'linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                    
+                }}>
+                  <div className="motivation-text">
+                  {info.message}
+                  </div>
+            </div>
+        </FlippingCardBack>
+        <FlippingCardFront>
+            <div
+                style={{
+                    width: '100%',
+                    height: '75%',
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#85FFBD',
+                    backgroundImage: 'linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%)',
+                }}>
+            </div>
+        </FlippingCardFront>
+    </FlippingCard>
+      })
+    }</ul></div>
   }
 }
 
