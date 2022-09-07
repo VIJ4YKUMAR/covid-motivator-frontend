@@ -25,10 +25,32 @@ class ShowMessages extends React.Component<any, any>{
     if (messages.length == 0) return <div>No Messages</div>
 
     return <div> <ul>{
-      messages.map((info) => {
-        return <li key={info.id}> {info.message} </li>
-      })
-    }</ul></div>
+      messages.map(info) => <FlippingCard>
+      <FlippingCardBack>
+          <div
+              style={{
+                  width: '100%',
+                  height: '100%',
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundImage: 'url(https://i.imgur.com/wjbYGNv.jpg)'
+              }}>
+          </div>
+      </FlippingCardBack>
+      <FlippingCardFront>
+          <div
+              style={{
+                  width: '100%',
+                  height: '100%',
+                  backgroundSize: 'contain',
+                  backgroundPosition: 'center',
+                  backgroundImage: 'url(https://i.imgur.com/3sKjY8V.jpg)'
+              }}>
+          </div>
+      </FlippingCardFront>
+  </FlippingCard>
+  </ul>
+  </div>
   }
 }
 
