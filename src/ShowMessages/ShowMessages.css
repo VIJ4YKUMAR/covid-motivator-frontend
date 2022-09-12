@@ -5,3 +5,12 @@
     font-family: fantasy;
     padding: 20px;
 }
+
+.post-button{
+  position: absolute;
+  left: 375px;
+  top: 500px;
+  font-size: 24px;
+  cursor:auto;
+  text-align: center;
+}
