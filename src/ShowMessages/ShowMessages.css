@@ -6,11 +6,29 @@
     padding: 20px;
 }
 
-.post-button{
-  position: absolute;
-  left: 375px;
-  top: 500px;
-  font-size: 24px;
-  cursor:auto;
-  text-align: center;
-}
+.post-button {
+    position: absolute;
+    left: 1170px;
+    top: 5px;
+    display: inline-block;
+    padding: 10px 10px;
+    font-style: italic;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: rgb(14, 14, 13);
+    background-color: #8cb6e6;
+    border: none;
+    border-radius: 15px;
+  }
+  
+  .post-button:hover {background-color: #7fffd4 } 
+  
+  .post-button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px rgb(92, 82, 82);
+    transform: translateY(4px);
+  }
+  
+  

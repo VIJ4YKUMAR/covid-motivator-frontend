@@ -35,7 +35,7 @@ class ShowMessages extends React.Component<any, any>{
 
       <Link to={'/post_messages'}>
         <div className="post-button"> 
-        <button>post a message</button>
+        POST A MESSAGE
         </div>
       </Link>
       
