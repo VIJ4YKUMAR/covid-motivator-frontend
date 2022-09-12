@@ -5,6 +5,7 @@ import { FlippingCardBack } from 'react-ui-cards';
 import { FlippingCardFront } from 'react-ui-cards';
 
 import "./ShowMessages.css";
+import { Link } from "react-router-dom";
 
 class ShowMessages extends React.Component<any, any>{
   constructor(props: any) {
@@ -30,7 +31,14 @@ class ShowMessages extends React.Component<any, any>{
     const messages = this.state.messages
     if (messages.length === 0) return <div>No Messages</div>
 
-    return <div> <ul  style={{
+    return <div> 
+
+      <Link to={'/post_messages'}>
+        Post a Message
+      </Link>
+      
+      
+      <ul  style={{
     display : "flex",
     flexDirection: "row",
     flexWrap: "wrap",
