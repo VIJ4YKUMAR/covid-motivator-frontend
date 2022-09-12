@@ -28,7 +28,7 @@ class ShowMessages extends React.Component<any, any>{
 
   render() {
     const messages = this.state.messages
-    if (messages.length == 0) return <div>No Messages</div>
+    if (messages.length === 0) return <div>No Messages</div>
 
     return <div> <ul  style={{
     display : "flex",
