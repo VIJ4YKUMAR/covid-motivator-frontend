@@ -18,9 +18,7 @@ class App extends React.Component<any, any>{
     event.preventDefault();
     const quote = this.state.quote;
     axios.post("https://covid-motivator.herokuapp.com/my_app", quote,{
-      params: {
         message:quote 
-      }
     })
     this.form.reset()
   };
