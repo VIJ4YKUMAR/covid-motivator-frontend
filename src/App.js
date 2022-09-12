@@ -17,7 +17,7 @@ class App extends React.Component<any, any>{
   submitQuote = (event: any) => {
     event.preventDefault();
     const quote = this.state.quote;
-    axios.get("https://covid-motivator.herokuapp.com/my_app",{
+    axios.post("https://covid-motivator.herokuapp.com/my_app", quote,{
       params: {
         message:quote 
       }
@@ -34,7 +34,7 @@ class App extends React.Component<any, any>{
   render(){
     return(
       <div key="main-app" className="App">
-        <form name="message_form" action="#" ref={form => this.form = form}>
+        <form name="message_form" action="#" method = "post" ref={form => this.form = form}>
           <label>
         {" "}
             <input type="text" name="message" placeholder="ENTER YOUR MESSAGE" maxLength={200} onChange={this.handleChange} />
