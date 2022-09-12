@@ -10,14 +10,14 @@ class App extends React.Component<any, any>{
     }; 
   }
   componentDidMount() {
-    axios.get("http://127.0.0.1:5000/get_messages")
+    axios.get("https://covid-motivator.herokuapp.com/get_messages")
     
   }
 
   submitQuote = (event: any) => {
     event.preventDefault();
     const quote = this.state.quote;
-    axios.get("http://127.0.0.1:5000/my_app",{
+    axios.get("https://covid-motivator.herokuapp.com/my_app",{
       params: {
         message:quote 
       }
