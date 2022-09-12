@@ -20,7 +20,7 @@ root.render(
       {/* A <Switch> looks through its children <Route>s and
       renders the first one that matches the current URL. */}
       <Routes>
-        <Route path="post_messages" element={<App />} />
+        <Route path="/post_messages" element={<App />} />
         <Route path="/" element={<ShowMessages />} />
       </Routes>
     </div>
