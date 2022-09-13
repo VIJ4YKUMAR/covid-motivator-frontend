@@ -21,8 +21,8 @@ class ShowMessages extends React.Component<any, any>{
   }
 
   getMessages = async () => {
-    const response = await axios.get("https://covid-motivator.herokuapp.com/get_messages")
-    //const response = await axios.get("http://127.0.0.1:5000/get_messages")
+    //const response = await axios.get("https://covid-motivator.herokuapp.com/get_messages")
+    const response = await axios.get("http://127.0.0.1:5000/get_messages")
     const { data } = response
     console.log(data)
     this.setState({ messages: data })

@@ -18,10 +18,10 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
 }
 
-input[type=text], select {
+.msgfield[type=text], select {
   opacity: 0.5;
   text-align: center;
   width: 700px;
@@ -30,30 +30,43 @@ input[type=text], select {
   border-radius: 40px;
 }
 
+.username[type=text], select{
+  position: absolute;
+  left: 10px;
+  top: 390px;
+  opacity: 0.5;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  border: 3px solid #b7f399;  
+  border-radius: 40px;
+}
+
+
 ::placeholder{
   color: rgb(5, 5, 5);
-  opacity: 1;
+  opacity: 2;
 }
 
 .button {
   position: absolute;
-  left: 275px;
-  top: 500px;
+  left: 375px;
+  top: 390px;
   display: inline-block;
-  padding: 20px 30px;
+  padding: 8px 20px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: rgb(237, 240, 226);
+  color: rgb(17, 18, 17);
   background-color: #8cb6e6;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 5px rgb(92, 82, 82);
+  /*box-shadow: 0 5px rgb(92, 82, 82);*/
 }
 
-.button:hover {background-color: #59a0f0 } 
+.button:hover {background-color: #e5f50f } 
 
 .button:active {
   background-color: #3e8e41;
