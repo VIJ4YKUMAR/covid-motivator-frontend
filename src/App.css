@@ -1,5 +1,5 @@
 html{
-  background: url('./images/bg_image4.jpeg') no-repeat center center fixed;
+  /*background: url('./images/bg_image4.jpeg') no-repeat center center fixed;*/
   opacity: 1;
   filter: alpha(opacity=30);
   -webkit-background-size: cover;
