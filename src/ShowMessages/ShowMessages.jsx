@@ -52,7 +52,7 @@ class ShowMessages extends React.Component<any, any>{
             <div 
                 style={{
                     width: '100%',
-                    height: '75%',
+                    height: '100%',
                     backgroundSize: 'contain',
                     backgroundPosition: 'center',
                     backgroundColor: '#8BC6EC',                   
@@ -71,11 +71,14 @@ class ShowMessages extends React.Component<any, any>{
             <div
                 style={{
                     width: '100%',
-                    height: '75%',
+                    height: '100%',
                     backgroundSize: 'contain',
                     backgroundPosition: 'center',
                     backgroundColor: '#85FFBD',
                     backgroundImage: 'linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                 }}>
             </div>
         </FlippingCardFront>
