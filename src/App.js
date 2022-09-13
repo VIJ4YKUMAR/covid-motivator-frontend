@@ -11,16 +11,16 @@ class App extends React.Component<any, any>{
     }; 
   }
   componentDidMount() {
-    //axios.get("https://covid-motivator.herokuapp.com/get_messages")
-    axios.get("http://localhost:5000/get_messages")
+    axios.get("https://covid-motivator.herokuapp.com/get_messages")
+    //axios.get("http://localhost:5000/get_messages")
   }
 
   submitQuote = (event: any) => {
     event.preventDefault();
     const quote = this.state.quote;
     const name = this.state.name;
-    //axios.post("https://covid-motivator.herokuapp.com/my_app",{
-    axios.post("http://localhost:5000/my_app",{
+    axios.post("https://covid-motivator.herokuapp.com/my_app",{
+    //axios.post("http://localhost:5000/my_app",{
       message:quote,
       u_name:name,
     })
