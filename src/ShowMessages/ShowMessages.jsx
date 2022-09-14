@@ -30,21 +30,20 @@ class ShowMessages extends React.Component<any, any>{
 
   render() {
     const messages = this.state.messages
-    if (messages.length === 0) return <div>No Messages</div>
-
-    return <div> 
-
+    if (messages.length === 0) return <div>No Messages
       <Link to={'/post_messages'}>
         <div className="post-button"> 
         POST A MESSAGE
         </div>
       </Link>
-      
-      
-      <ul  style={{
-    display : "flex",
-    flexDirection: "row",
-    flexWrap: "wrap",
+    </div>
+
+  return <div> 
+
+    <ul  style={{
+      display : "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
   }}>{
       messages.map((info) => {
         return <FlippingCard>

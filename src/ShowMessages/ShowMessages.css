@@ -24,12 +24,13 @@
     border-radius: 15px;
   }
   
-  .post-button:hover {background-color: #7fffd4 } 
+.post-button:hover {background-color: #7fffd4 } 
   
-  .post-button:active {
+.post-button:active {
     background-color: #3e8e41;
     box-shadow: 0 5px rgb(92, 82, 82);
     transform: translateY(4px);
   }
-  
-  
+
+
+
