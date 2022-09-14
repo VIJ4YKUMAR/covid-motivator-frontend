@@ -34,8 +34,8 @@ class ShowMessages extends React.Component<any, any>{
       <PostButton />
     </div>
 
-  return <div> 
-    <PostButton />
+  return <div>
+    <PostButton /> 
     <ul className = "flipcardlayout" >{
       messages.map((info) => {
         return <FlippingCard>
