@@ -5,7 +5,7 @@ import { FlippingCardBack } from 'react-ui-cards';
 import { FlippingCardFront } from 'react-ui-cards';
 
 import "./ShowMessages.css";
-import { Link } from "react-router-dom";
+import PostButton from "./PostButton";
 
 class ShowMessages extends React.Component<any, any>{
   constructor(props: any) {
@@ -31,15 +31,11 @@ class ShowMessages extends React.Component<any, any>{
   render() {
     const messages = this.state.messages
     if (messages.length === 0) return <div>No Messages
-      <Link to={'/post_messages'}>
-        <div className="post-button"> 
-        POST A MESSAGE
-        </div>
-      </Link>
+      <PostButton />
     </div>
 
   return <div> 
-
+    <PostButton />
     <ul  style={{
       display : "flex",
       flexDirection: "row",
@@ -63,6 +59,9 @@ class ShowMessages extends React.Component<any, any>{
                 }}>
                   <div className="motivation-text">
                   {info.message}
+                  </div>
+                  <div className="author">
+                    {info.name}
                   </div>
             </div>
         </FlippingCardBack>
