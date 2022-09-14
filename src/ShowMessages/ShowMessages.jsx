@@ -36,27 +36,11 @@ class ShowMessages extends React.Component<any, any>{
 
   return <div> 
     <PostButton />
-    <ul  style={{
-      display : "flex",
-      flexDirection: "row",
-      flexWrap: "wrap",
-  }}>{
+    <ul className = "flipcardlayout" >{
       messages.map((info) => {
         return <FlippingCard>
         <FlippingCardBack>
-            <div 
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center',
-                    backgroundColor: '#8BC6EC',                   
-                    backgroundImage: 'linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                    
-                }}>
+            <div className="flip-card-back">
                   <div className="motivation-text">
                   {info.message}
                   </div>
@@ -66,22 +50,11 @@ class ShowMessages extends React.Component<any, any>{
             </div>
         </FlippingCardBack>
         <FlippingCardFront>
-            <div
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    backgroundSize: 'contain',
-                    backgroundPosition: 'center',
-                    backgroundColor: '#85FFBD',
-                    backgroundImage: 'linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                }}>
-            </div>
+            <div className="flip-card-front"></div>
         </FlippingCardFront>
     </FlippingCard>
       })
+    
     }</ul></div>
   }
 }
