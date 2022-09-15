@@ -42,7 +42,7 @@ class App extends React.Component<any, any>{
             <input type="text" className="msgfield" name="quote" placeholder="write your message here " maxLength={200} onChange={this.handleChange}/><br></br>
           </label>
           <label>
-            <input type="text" className="username" name="name" placeholder="ENTER YOUR NAME" maxLength={100} onChange={this.handleChange}/>
+            <input type="text" className="username" name="name" placeholder="enter your name" maxLength={100} onChange={this.handleChange}/>
           </label>
           <button className="button" onClick={this.submitQuote}>SEND</button>
         </form>
