@@ -1,5 +1,5 @@
 html{
-  /*background: url('./images/bg_image4.jpeg') no-repeat center center fixed;*/
+  background: linear-gradient(179.4deg, rgb(12, 20, 69) -16.9%, rgb(71, 30, 84) 119.9%);
   opacity: 1;
   filter: alpha(opacity=30);
   -webkit-background-size: cover;
@@ -9,6 +9,7 @@ html{
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .App {
