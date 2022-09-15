@@ -30,7 +30,7 @@ class ShowMessages extends React.Component<any, any>{
 
   render() {
     const messages = this.state.messages
-    if (messages.length === 0) return <div>No Messages
+    if (messages.length === 0) return <div className="no_msg">No Messages :(
       <PostButton />
     </div>
 
@@ -45,7 +45,7 @@ class ShowMessages extends React.Component<any, any>{
                   {info.message}
                   </div>
                   <div className="author">
-                    {info.name}
+                  {info.name}
                   </div>
             </div>
         </FlippingCardBack>
