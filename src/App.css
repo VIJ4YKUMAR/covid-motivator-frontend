@@ -1,5 +1,5 @@
 html{
-  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+  background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
   opacity: 1;
   filter: alpha(opacity=30);
   -webkit-background-size: cover;
@@ -15,7 +15,7 @@ html{
 .App {
   position: absolute;
   left: 280px;
-  text-align: center;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,11 +24,12 @@ html{
 
 .msgfield[type=text], select {
   opacity: 0.5;
-  text-align: center;
+  font-size: medium;
+  text-align: left;
   width: 700px;
   height: 200px;
-  border: 3px solid #d212e3;  
-  border-radius: 40px;
+  border: 3px solid #1b1e19;  
+  border-radius: 10px;
 }
 
 .username[type=text], select{
@@ -39,7 +40,7 @@ html{
   text-align: center;
   width: 300px;
   height: 40px;
-  border: 3px solid #b7f399;  
+  border: 3px solid #1b1e19;  
   border-radius: 40px;
 }
 
@@ -52,7 +53,7 @@ html{
 .button {
   position: absolute;
   left: 375px;
-  top: 390px;
+  top: 393px;
   display: inline-block;
   padding: 8px 20px;
   font-size: 24px;
@@ -63,7 +64,7 @@ html{
   color: rgb(17, 18, 17);
   background-color: #8cb6e6;
   border: none;
-  border-radius: 15px;
+  border-radius: 30px;
   /*box-shadow: 0 5px rgb(92, 82, 82);*/
 }
 

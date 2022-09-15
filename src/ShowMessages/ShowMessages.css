@@ -1,6 +1,6 @@
 .motivation-text {
     font-size: 15px;
-    color: #000000;
+    color: #ffffff;
     text-align: justify;
     font: oblique 50deg;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,6 +37,7 @@
   font: italic;
   font-style: italic;
   font-size: 18px;
+  color: #ffffff;
   align-items: end;
   position: relative;
   top: 100px;
@@ -65,8 +66,8 @@
     height: 100%;
     background-size: contain;
     background-position: center;
-    background-color: #85FFBD;
-    background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+    background-color: #e8198b;
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
     display: flex;
     align-items: center;
     justify-content: center;

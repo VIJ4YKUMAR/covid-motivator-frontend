@@ -39,7 +39,7 @@ class App extends React.Component<any, any>{
         <form name="message_form" action="#" method = "post" ref={form => this.form = form}>
           <label>
         {" "}
-            <input type="text" className="msgfield" name="quote" placeholder="ENTER YOUR MESSAGE" maxLength={200} onChange={this.handleChange} /><br></br>
+            <input type="text" className="msgfield" name="quote" placeholder="write your message here " maxLength={200} onChange={this.handleChange}/><br></br>
           </label>
           <label>
             <input type="text" className="username" name="name" placeholder="ENTER YOUR NAME" maxLength={100} onChange={this.handleChange}/>
