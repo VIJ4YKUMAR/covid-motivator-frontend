@@ -40,16 +40,18 @@ footer{
 .footer-content {
   text-align: center;
   font-size: 22px;
-  padding: 20px;
+  padding: 5px;
   margin-top: 0px;
 }
 
 .footer-bottom {
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   color: rgb(0, 0, 0);
-  font-style: italic;
+  font-weight: 700;
+  font-style: inherit;
 }
 
 .social-icons {
@@ -58,7 +60,7 @@ footer{
 
 .fa {
   padding: 5px;
-  width: 50px;
+  width: 40px;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
