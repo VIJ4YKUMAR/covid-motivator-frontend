@@ -48,7 +48,7 @@ footer{
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   color: rgb(0, 0, 0);
   font-weight: 700;
   font-style: inherit;
@@ -87,7 +87,7 @@ footer{
   margin: 0;
   }
 
-.copyrights{
-  color: white;
-  font-size: medium;
+.about-info{
+  position: relative;
+  align-items: baseline;
 }

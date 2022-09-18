@@ -9,6 +9,7 @@ import {
   Route,
 } from "react-router-dom";
 import ShowMessages from './ShowMessages/ShowMessages';
+import About from './About'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
       <Routes>
         <Route path="/post_messages" element={<App />} />
         <Route path="/" element={<ShowMessages />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </div>
   </BrowserRouter>
