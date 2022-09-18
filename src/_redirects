@@ -1,4 +1,1 @@
-[[redirects]]
-    from = "/index.html"
-    to = "/About.js"
-    status = 200
+/*    /index.html   200
