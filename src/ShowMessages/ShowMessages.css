@@ -37,6 +37,7 @@
 
 .author {
   position: relative;
+  padding-right: 20px;
   top: 100px;
   font-style: italic;
   font-size: 15px;
