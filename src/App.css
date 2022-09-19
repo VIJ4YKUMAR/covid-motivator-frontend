@@ -14,7 +14,6 @@ html{
 
 .App {
   position: absolute;
-  left: 280px;
   text-align: left;
   display: flex;
   align-items: center;
@@ -26,7 +25,8 @@ html{
   opacity: 0.5;
   font-size: medium;
   text-align: left;
-  width: 700px;
+  margin-left: 50px;
+  width: 450px;
   height: 200px;
   border: 3px solid #1b1e19;  
   border-radius: 9px;
@@ -34,8 +34,8 @@ html{
 
 .username[type=text], select{
   position: absolute;
-  left: 2px;
-  top: 390px;
+  top: 410px;
+  margin-left: 50px;
   opacity: 0.5;
   text-align: left;
   width: 300px;
@@ -56,8 +56,8 @@ html{
   color: var(--color);
   transition: 0.25s;
   position: absolute;
-  left: 325px;
-  top: 385px;
+  left: 370px;
+  top: 410px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;

@@ -37,6 +37,7 @@ class App extends React.Component<any, any>{
   render(){
     return(
       <div key="main-app" className="App">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <form name="message_form" action="#" method = "post" ref={form => this.form = form}>
           <label>
         {" "}
