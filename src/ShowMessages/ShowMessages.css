@@ -10,24 +10,22 @@
   }
 
 .post-button {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 1150px;
-    top: 10px;
-    display: inline-block;
-    padding: 10px 30px;
+    position: relative;
+    left: 1030px;
+    top: -90px;
+    display:inline-block;
+    padding: 10px 15px;
     font-style: italic;
     font-size: 10px;
     cursor: pointer;
     text-align: center;
-    outline: none;
-    color: rgb(14, 14, 13);
-    background-color: #8cb6e6;
+    color: white;
+    background-color: #3c8be6;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   
-.post-button:hover {background-color: #f9b289 } 
+.post-button:hover {background-color: #000000 } 
   
 .post-button:active {
     background-color: #3e8e41;

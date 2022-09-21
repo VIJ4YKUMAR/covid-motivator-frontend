@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: black;
+  overflow: auto;
+  overscroll-behavior: none;
 }
 
 code {
@@ -14,21 +16,23 @@ code {
 }
 
 h1 {
-  color: #0a3e47;
-  font-style: oblique;
-  font-family: 'Times New Roman', Times, serif;
+  padding-left: 40px;
+  color: black;
+  font: 'Stencil Std, fantasy';
   font-size: 60px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 1px;
   }
 
-h4{
+h3{
+  padding-left: 40px;
+  color: black;
   text-align: left;
   position: relative;
-  margin-top: 2px;
+  margin-top: 10px;
   margin-left: 10px;
-  font-weight: 300;
+  font-weight: 500;
   font-style: oblique;
   font-size: 20px;
 }
@@ -71,7 +75,7 @@ footer{
 }
 
 .fa-twitter {
-  color: #55ACEE;
+  color: #0a88e8;
 }
 
 .fa-github {

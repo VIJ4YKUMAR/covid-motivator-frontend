@@ -41,10 +41,10 @@ class App extends React.Component<any, any>{
         <form name="message_form" action="#" method = "post" ref={form => this.form = form}>
           <label>
         {" "}
-            <input type="text" className="msgfield" name="quote" placeholder="write your message here " onChange={this.handleChange}/><br></br>
+            <textarea id="msgfield" name="quote" rows="15" cols="60" placeholder="write your message here " onChange={this.handleChange}/><br></br>
           </label>
           <label>
-            <input type="text" className="username" name="name" placeholder="enter your name" onChange={this.handleChange}/>
+            <textarea id="username" name="name" rows="4" cols="30" placeholder="enter your name" onChange={this.handleChange}/>
           </label>
           <button className="button" onClick={this.submitQuote}>send</button>
         </form>
