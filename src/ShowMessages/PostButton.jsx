@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PostButton = () => {
     return (<Link to={'/post_messages'}>
         <div className="post-button">
-            POST A MESSAGE
+            Post a Message
         </div>
     </Link>)
 }

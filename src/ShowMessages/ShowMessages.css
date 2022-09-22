@@ -11,25 +11,24 @@
 
 .post-button {
     position: relative;
-    left: 1030px;
-    top: -90px;
+    left: 995px;
+    top: -175px;
     display:inline-block;
     padding: 10px 15px;
-    font-style: italic;
-    font-size: 10px;
+    font-weight: bolder;
+    font-size: 13px;
     cursor: pointer;
     text-align: center;
     color: white;
     background-color: #3c8be6;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
-.post-button:hover {background-color: #000000 } 
+/*.post-button:hover {background-color: #000000 } */
   
 .post-button:active {
     background-color: #3e8e41;
-    box-shadow: 0 5px rgb(92, 82, 82);
     transform: translateY(4px);
   }
 
@@ -53,7 +52,6 @@
   height: 100%;
   background-size: contain;
   background-position: center;
-  background-color: #8BC6EC;                 
   background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   display: flex;
   align-items: center;
@@ -65,8 +63,7 @@
     height: 100%;
     background-size: contain;
     background-position: center;
-    background-color: #e8198b;
-    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+    background-color: rgb(252, 149, 200);
     display: flex;
     align-items: center;
     justify-content: center;

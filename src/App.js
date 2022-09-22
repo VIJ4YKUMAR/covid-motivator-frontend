@@ -41,10 +41,12 @@ class App extends React.Component<any, any>{
         <form name="message_form" action="#" method = "post" ref={form => this.form = form}>
           <label>
         {" "}
-            <textarea id="msgfield" name="quote" rows="15" cols="60" placeholder="write your message here " onChange={this.handleChange}/><br></br>
+            <textarea class="txt_box" id="msgfield" name="quote" rows="15" cols="60" placeholder="write your message here " onChange={this.handleChange}/><br></br>
           </label>
+          <div class="note" ><p>*(the message sent will be approved by the admin after classification for offensive speech)</p>
+          </div>
           <label>
-            <textarea id="username" name="name" rows="4" cols="30" placeholder="enter your name" onChange={this.handleChange}/>
+            <input id="username" name="name" placeholder="enter your name" onChange={this.handleChange}/>
           </label>
           <button className="button" onClick={this.submitQuote}>send</button>
         </form>

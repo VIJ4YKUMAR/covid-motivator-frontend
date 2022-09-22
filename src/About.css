@@ -8,7 +8,7 @@
     color: rgb(86, 86, 90);
 }
 
-img{
+.preload{
     display: flex;
     flex-wrap: wrap;
     float: left;

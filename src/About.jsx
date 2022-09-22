@@ -22,7 +22,7 @@ import img from './images/me.jpeg';
             <h1 className="title">About</h1>
         </div>
             <div id = "preload">
-            <img src={img} alt="profile"></img>
+            <img class="preload" src={img} alt="profile"></img>
         </div>
         <div>    
             <p className="content">Hi<span role="img" aria-label="hello">👋</span> I'm Vijay. I was born and raised in Chennai. I did my undergrad in CSE from College Of Engineering Guindy, Anna University. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</p> 
