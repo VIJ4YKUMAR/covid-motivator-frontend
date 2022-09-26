@@ -2,6 +2,7 @@ import "./App.css";
 import "./index.css";
 import axios from "axios";
 import React from "react";
+import toast, {Toaster} from "react-hot-toast";
 
 class App extends React.Component<any, any>{
   constructor(props: any){
@@ -15,6 +16,11 @@ class App extends React.Component<any, any>{
     axios.get("https://covid-motivator.herokuapp.com/get_messages")
     //axios.get("http://localhost:5000/get_messages")
   }
+    
+  successToast = () => toast.success("thank you for your message", {
+    duration: 4000,
+    position: 'bottom-center',
+  });  
 
   submitQuote = (event: any) => {
     event.preventDefault();
@@ -25,6 +31,7 @@ class App extends React.Component<any, any>{
       message:quote,
       u_name:name,
     })
+    .then(this.successToast)
     this.form.reset()
   };
 
@@ -33,6 +40,7 @@ class App extends React.Component<any, any>{
       [event.target.name]: event.target.value
     });
   };
+
 
   render(){
     return(
@@ -43,13 +51,14 @@ class App extends React.Component<any, any>{
         {" "}
             <textarea class="txt_box" id="msgfield" name="quote" rows="15" cols="60" placeholder="write your message here " onChange={this.handleChange}/><br></br>
           </label>
-          <div class="note" ><p>*(the message sent will be approved by the admin after classification for offensive speech)</p>
+          <div class="note" ><p>*(The messages will be approved by the admin after classification for offensive speech)</p>
           </div>
           <label>
             <input id="username" name="name" placeholder="enter your name" onChange={this.handleChange}/>
           </label>
-          <button className="button" onClick={this.submitQuote}>send</button>
+          <button type="submit" className="button" onClick={this.submitQuote}>send</button>
         </form>
+      <Toaster />
       </div>
     );
   }
