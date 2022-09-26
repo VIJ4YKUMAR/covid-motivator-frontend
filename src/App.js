@@ -51,7 +51,7 @@ class App extends React.Component<any, any>{
         {" "}
             <textarea class="txt_box" id="msgfield" name="quote" rows="15" cols="60" placeholder="write your message here " onChange={this.handleChange}/><br></br>
           </label>
-          <div class="note" ><p>*(The messages will be approved by the admin after classification for offensive speech)</p>
+          <div class="note" ><p>*(the messages will be approved by the admin after classification for offensive speech)</p>
           </div>
           <label>
             <input id="username" name="name" placeholder="enter your name" onChange={this.handleChange}/>
