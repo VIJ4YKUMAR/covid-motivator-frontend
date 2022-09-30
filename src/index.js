@@ -17,8 +17,8 @@ root.render(
 
   <BrowserRouter>
     <div>
-    <img class="logo" src="/images/logo.png" id="logo" alt="logo.jpg"/>
-    <div class="define">
+    <img className="logo" src="/images/logo.png" id="logo" alt="logo.jpg"/>
+    <div className="define">
       <p>Welcome to Covid Motivator <span role="img" aria-label="welcome">💌</span>. This app lets you to send and view motivational messages.</p>
     </div>
       {/* A <Switch> looks through its children <Route>s and

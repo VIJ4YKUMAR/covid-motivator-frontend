@@ -6,6 +6,7 @@ import { FlippingCardFront } from 'react-ui-cards';
 
 import "./ShowMessages.css";
 import PostButton from "./PostButton";
+//import Getcount from "../count";
 
 class ShowMessages extends React.Component<any, any>{
   constructor(props: any) {
@@ -25,8 +26,12 @@ class ShowMessages extends React.Component<any, any>{
     //const response = await axios.get("http://127.0.0.1:5000/get_messages")
     const { data } = response
     console.log(data)
+    //const count = data.length
+    //console.log(count);
+    //this.setState({number: count})
     this.setState({messages: data})
   }
+
 
   render() {
     const messages = this.state.messages
@@ -54,8 +59,8 @@ class ShowMessages extends React.Component<any, any>{
         </FlippingCardFront>
     </FlippingCard>
       })
-    
-    }</ul></div>
+    }</ul>
+    </div>
   }
 }
 
