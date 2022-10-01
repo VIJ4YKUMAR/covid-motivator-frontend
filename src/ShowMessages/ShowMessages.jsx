@@ -3,16 +3,16 @@ import axios from "axios";
 import { FlippingCard } from 'react-ui-cards';
 import { FlippingCardBack } from 'react-ui-cards';
 import { FlippingCardFront } from 'react-ui-cards';
-
 import "./ShowMessages.css";
 import PostButton from "./PostButton";
-//import Getcount from "../count";
+
 
 class ShowMessages extends React.Component<any, any>{
   constructor(props: any) {
     super(props);
     this.state = {
       messages: [],
+      number: '',
     };
   }
 
@@ -27,39 +27,42 @@ class ShowMessages extends React.Component<any, any>{
     const { data } = response
     console.log(data)
     //const count = data.length
-    //console.log(count);
-    //this.setState({number: count})
-    this.setState({messages: data})
+    this.setState({ messages: data })
+    const count = this.state.messages.length;
+    this.setState({ number: count })
+    console.log(count);
   }
-
 
   render() {
     const messages = this.state.messages
+    const number = this.state.number
     if (messages.length === 0) return <div className="no_msg">No Messages :(
       <PostButton />
-    </div>
-
-  return <div>
-    <PostButton /> 
-    <ul className = "flipcardlayout" >{
-      messages.map((info) => {
-        return <FlippingCard>
-        <FlippingCardBack>
-            <div className="flip-card-back">
-                  <div className="motivation-text">
+      </div>
+    return <div>
+      <div className="msg_count">
+      <p>total messages: {number}</p>
+      </div>
+      <PostButton />
+      <ul className="flipcardlayout" >{
+        messages.map((info) => {
+          return <FlippingCard>
+            <FlippingCardBack>
+              <div className="flip-card-back">
+                <div className="motivation-text">
                   {info.message}
-                  </div>
-                  <div className="author">
+                </div>
+                <div className="author">
                   {info.name}
-                  </div>
-            </div>
-        </FlippingCardBack>
-        <FlippingCardFront>
-            <div className="flip-card-front"></div>
-        </FlippingCardFront>
-    </FlippingCard>
-      })
-    }</ul>
+                </div>
+              </div>
+            </FlippingCardBack>
+            <FlippingCardFront>
+              <div className="flip-card-front"></div>
+            </FlippingCardFront>
+          </FlippingCard>
+        })
+      }</ul>
     </div>
   }
 }

@@ -11,7 +11,7 @@
 
 .post-button {
     position: relative;
-    left: 995px;
+    left: 240px;
     top: -175px;
     display:inline-block;
     padding: 10px 15px;
@@ -74,4 +74,18 @@
   text-align: center;
   margin-top: 10px;  
   font-weight: bolder;
+}
+
+.msg_count{
+  position: relative;
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  display: inline-block;
+  width: 220px;
+  background-color: rgb(241, 230, 190);
+  border-radius: 7px;
+  margin-left: 530px;
 }
