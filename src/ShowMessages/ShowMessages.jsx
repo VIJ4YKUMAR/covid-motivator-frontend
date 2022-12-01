@@ -40,9 +40,9 @@ class ShowMessages extends React.Component<any, any>{
       <PostButton />
       </div>
     return <div>
-      <div className="msg_count">
+      {/* <div className="msg_count">
       <p>total messages: {number}</p>
-      </div>
+      </div> */}
       <PostButton />
       <ul className="flipcardlayout" >{
         messages.map((info) => {
@@ -63,6 +63,9 @@ class ShowMessages extends React.Component<any, any>{
           </FlippingCard>
         })
       }</ul>
+      <div className="msg_count">
+      <p>total messages: {number}</p>
+      </div>
     </div>
   }
 }

@@ -16,13 +16,17 @@ root.render(
 
 
   <BrowserRouter>
+    <header>
     <div>
     <img className="logo" src="/images/logo.png" id="logo" alt="logo.jpg"/>
+    </div>
+    </header>
     <div className="define">
       <p>Welcome to Covid Motivator <span role="img" aria-label="welcome">💌</span>. This app lets you to send and view motivational messages.</p>
     </div>
       {/* A <Switch> looks through its children <Route>s and
       renders the first one that matches the current URL. */}
+    <div>
       <Routes>
         <Route path="/post_messages" element={<App />} />
         <Route path="/" element={<ShowMessages />} />

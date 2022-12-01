@@ -11,7 +11,7 @@
 
 .post-button {
     position: relative;
-    left: 240px;
+    left: 1400px;
     top: -175px;
     display:inline-block;
     padding: 10px 15px;
@@ -87,5 +87,5 @@
   width: 220px;
   background-color: rgb(241, 230, 190);
   border-radius: 7px;
-  margin-left: 530px;
+  margin-left: 800px;
 }
