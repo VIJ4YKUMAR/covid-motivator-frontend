@@ -55,8 +55,8 @@ html{
   color: var(--color);
   transition: 0.15s;
   position: absolute;
-  left: 730px;
-  top: 380px;
+  left: 1000px;
+  top: 520px;
   font-size: 24px;
   cursor: pointer;
   text-align: center;
