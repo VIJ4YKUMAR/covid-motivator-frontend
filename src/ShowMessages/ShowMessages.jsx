@@ -22,7 +22,7 @@ class ShowMessages extends React.Component<any, any>{
   }
 
   getMessages = async () => {
-    const response = await axios.get("https://covid-motivator.onrender.com/my_app")
+    const response = await axios.get("https://covid-motivator.onrender.com/get_messages")
     //const response = await axios.get("http://127.0.0.1:5000/get_messages")
     const { data } = response
     console.log(data)
