@@ -10,10 +10,10 @@
   }
 
 .post-button {
-    position: relative;
-    left: 1400px;
-    top: -175px;
-    display:inline-block;
+    position: absolute;
+    left: 700px;
+    top: 20px;
+    display: inline-block;
     padding: 10px 15px;
     font-weight: bolder;
     font-size: 13px;
@@ -25,7 +25,7 @@
     border-radius: 5px;
   }
   
-/*.post-button:hover {background-color: #000000 } */
+/* .post-button:hover {background-color: #000000 } */
   
 .post-button:active {
     background-color: #3e8e41;
